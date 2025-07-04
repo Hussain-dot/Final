@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashara Pass</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" class="loader"></div>
+  <div class="container" style="display:none;">
+    <img src="pass_with_user_photo.jpg" alt="Ashara Mubarak Pass" />
+  </div>
+  <script>
+    window.onload = function () {
+      const loader = document.getElementById('loader');
+      const container = document.querySelector('.container');
+      setTimeout(() => {
+        loader.style.display = 'none';
+        container.style.display = 'flex';
+      }, 1500);
+    };
+  </script>
+</body>
+</html>
